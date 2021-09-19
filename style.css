@@ -1,0 +1,1447 @@
+/*Name of File: Style Section
+Purpose: Contains all the style properties for all elements on the main HTML page.
+Last modified: 6/5/20
+Authors: Nick Kirtsos, Allen Cai, Jin Zhang, Richard Lam
+Dependencies: N/A.
+*/
+h1{
+    color:black;
+    text-align: center;
+    background-color:rgb(118, 194, 245);
+    border-radius: 25px;
+}
+
+.box-1{
+    width:500px;
+    height: 850px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 100px;
+    border: solid black;
+    float: left;
+    background-color: #BBBBBB;
+}
+
+.box-3{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: solid black;
+    float: left;
+    background-color: #BBBBBB;
+}
+
+#weekHeader
+{
+    text-align: center;
+}
+
+#textArea{
+    font-size: 24px;
+    font-weight: normal;
+    resize: none;
+    overflow-y: scroll;
+    height: 441px;
+    max-height: 1200px;
+
+    background-color: #FFFFFF;
+
+}
+
+.organizeButtons {
+    margin-top: 0px;
+    background-color: #000000;
+    height: 125px;
+}
+
+.title
+{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 500px;
+    height: 71px;
+    background-color: #00569D;
+    text-align: center;
+    font-size: 50px; 
+    color: gold;
+    font-style: bold;
+    font-stretch: ultra-expanded;
+    font-weight: 400;
+    font-family: Georgia, sans-serif;
+}
+
+#money
+{
+    font-style: bold;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------------*/
+/*------------Everything involving dropping out is in within here---------------------*/
+/*------------------------------------------------------------------------------------*/
+#TheEntireGame
+{
+    display: inline;
+}
+
+
+#dropOut
+{
+    float: left;
+    margin-top: 30px;
+    margin-left: 1px;
+    width: 100%; /* 500 px*/    
+    height: 80px;
+    background-image: url(drex/activities/DropOutButton.png);
+
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#dropOutDisplay
+{
+    display: none;
+
+    background-color: #999999;
+    width: 400px;
+    height: auto;
+
+    font-size: 25px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Winning the game/Ending */
+#winDisplay
+{
+    display: none;
+
+    background-color: #07dba6;
+    width: 400px;
+    height: auto;
+
+    font-size: 25px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Random Popup menus are BELOW*/
+
+/*---------------------------------------------------*/
+/*-----------Beggar background (Div)-----------------*/
+/*---------------------------------------------------*/
+#Beggar
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/Beggar.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+#giveHomelessAlotMoney
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 250px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#giveHomelessMoney
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#dontGiveHomelessMoney
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+#lieToHomeless
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+/*-----------------------------------------------------*/
+/*--------------Help classmate background (Div)--------*/
+/*-----------------------------------------------------*/
+#HelpClassmate
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/HelpClassmate.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+/*Help Classmate Buttons*/
+#HelpClassmateStudy
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 250px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+#HelpClassmateCheat
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#HelpClassmateDecline
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#HelpClassmateReport
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+/*-----------------------------------------------------*/
+/*---------Sase Event (Div)----------------------------*/
+/*-----------------------------------------------------*/
+#SaseEvent
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/SaseEvent.png);
+
+    padding-top: 1px;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+#goToSaseEvent
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    display: block;
+    margin-top: 300px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+#ignoreSaseEvent
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+/*-----------------------------------------------------*/
+/*---------Malaria (Div)-------------------------------*/
+/*-----------------------------------------------------*/
+#MalariaEvent
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/Malaria.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+/*Malaria Options*/
+#malaria_visit_urgentcare
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 320px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+#ignore_malaria
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+/*-----------------------------------------------------*/
+/*---------------Sprained Ankle Event (Div)------------*/
+/*-----------------------------------------------------*/
+#SprainedAnkleEvent
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/SprainedAnkle.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+/*Sprained Ankle Options*/
+#sprained_ankle_visit_urgentcare
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 320px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#ignore_sprained_ankle
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+/*-----------------------------------------------------*/
+/*----Freelance Finance--------------------------------*/
+/*-----------------------------------------------------*/
+#FreeLanceChoice
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/Freelance.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+#Freelancechoicess
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 135px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+#Freelancechoices
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 10px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------Popcorn Event (Div)--------------*/
+/*-----------------------------------------------------*/
+#FreePopcornEvent
+{
+    display: none;
+
+    width: 450px;
+    height: 450px;
+    background-image: url(drex/popups/Popcorn.png);
+
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+#take_freePopcorn
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 320px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#ignore_freePopcorn
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+
+
+    margin-top: 0px;
+    margin-left: 25px;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+
+/*-----------------------------------------------------*/
+/*-----------------------FINAL EXAMS-------------------*/
+/*-----------------------------------------------------*/
+#easyFinalExam
+{
+    display: none;
+
+    width: 450px;
+    height: 600px;
+    background-image: url(drex/popups/easyFinalExam.png);
+
+    padding-top: 1px;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+#easyAnswer1
+{
+    display: block;
+    margin-top: 350px;
+    margin-left: 25px;
+}
+#easyAnswer2
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#easyAnswer3
+{
+    display: block;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#easyAnswer4
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+#hardFinalExam
+{
+    display: none;
+
+    width: 450px;
+    height: 600px;
+    background-image: url(drex/popups/hardFinalExam.png);
+
+    padding-top: 1px;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+#answer1
+{
+    display: block;
+    margin-top: 350px;
+    margin-left: 25px;
+}
+#answer2
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer3
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer4
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer5
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer6
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer7
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+#answer8
+{
+    display: none;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+.blue_button
+{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: none;
+    background-image: url(drex/popups/popup_button_template.png);
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*STYLES FOR BUTTONS ARE BELOW */
+/*-------------------------------------------------------------------------------------*/
+
+#nextWeek
+{
+    width: 100px;
+    height: 100px;
+
+    background-color:#00AA00;
+    border-radius: 50%;
+    border-color: #FFFFFF;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+}
+
+#nextWeek:hover
+{
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(3, 97, 3);
+    border-radius: 50%;
+    border-color: #FFFFFF;
+
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+}
+
+#relationships
+{
+
+    width: 125px;
+    height: 125px;
+    float: left;
+    border: none;
+
+    background-image: url(drex/Relationships.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+
+    color: turquoise;
+    font-size: 15px;
+}
+
+#finances
+{
+    width: 125px;
+    height: 125px;
+    float: left;
+    border: none;
+
+    background-image: url(drex/Finances.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+
+    color: turquoise;
+    font-size: 15px;
+}
+
+#classes
+{
+    width: 125px;
+    height: 125px;
+    float: left;
+    border: none;
+
+    background-image: url(drex/Classes.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+
+    color: turquoise;
+    font-size: 15px;
+}
+
+#activities
+{
+    width: 125px;
+    height: 125px;
+    float: left;
+    border: none;
+
+    background-image: url(drex/Activities.png);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+
+
+    color: turquoise;
+    font-size: 15px;
+}
+
+#studyButton
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/classes/studyButton.png);
+}
+
+#BacktoFront
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/BackToFront.png);
+}
+#homeworkButton
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/classes/homeworkButton.png);
+}
+
+/*-------------------------------------------------------------*/
+/*--------------Activities on main activity page---------------*/
+/*-------------------------------------------------------------*/
+#eatAtHans
+{
+    float: left;
+    margin-top: 10%;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/HansButton.png);
+
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#eatFoodTruck
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/FoodTruckButton.png);
+}
+
+#workoutDAC
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/WorkoutButton.png);
+}
+
+#goToTheLibrary
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/HagertyLibraryButton.png);
+}
+
+#playPool
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/PoolButton.png);
+}
+/*-------------------------------------------------------------*/
+/*--------------- NETFLIX STYLE STUFF -------------------------*/
+/*-------------------------------------------------------------*/
+#getNetflix
+{
+    display: block;
+
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/BuyNetflixButton.png);
+}
+
+#watchNetflix
+{
+    display: none;
+
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 80px;
+    background-image: url(drex/activities/NetflixButton.png);
+}
+
+#backToFront
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+}
+
+#NetflixBackButton
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixBackButton.png);
+}
+
+#NetflixAnime
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixAnimeButton.png);
+}
+
+#NetflixMarvel
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixMarvelButton.png);
+}
+
+#NetflixSciFi
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixSciFiButton.png);
+}
+#NetflixHorror
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixHorrorButton.png);
+}
+#NetflixDocumentary
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/NetflixDocumentaryButton.png);
+}
+
+#urgentCare
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%; /* 500 px*/
+    height: 75px;
+    background-image: url(drex/activities/UrgentCareButton.png);
+}
+
+/*-------------------------------------------------------------*/
+/*---------------------- Finance Buttons ----------------------*/
+/*-------------------------------------------------------------*/
+#workstudy
+{
+    float: left;
+    margin-top: 10%;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/finances/WorkstudyButton.png);
+}
+
+#work
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/finances/ParttimeJobButton.png);
+}
+
+#stealbag
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/finances/RobButton.png);
+}
+
+#freelance
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/finances/FreelanceButton.png);
+}
+
+#parentsButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/ParentsButton.png);
+}
+#classmatesButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/ClassmatesButton.png);
+}
+#roommateButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/RoommateButton.png);
+}
+/*-------------------------------------------------------------*/
+/*------------------ Relationships  ---------------------------*/
+/*-------------------------------------------------------------*/
+#callMom
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/CallMomButton.png);
+}
+
+#callDad
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/CallDadButton.png);
+}
+
+#conversationButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/ConversationButton.png);
+}
+#cleanRoomButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/CleanRoomButton.png);
+}
+#burrowMoneyButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/BurrowMoneyButton.png);
+}
+#roommateHelpButton
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/AskRoommateHelpButton.png);
+}
+#button
+{
+    float: left;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 25%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: #4CAF50;
+
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*PROGRESS BARS ALL BELOW*/
+/*-------------------------------------------------------------------------------------*/
+#activityLimitBar
+{
+    height: 24px;
+    width: 0%;
+    background-color: #35ff02;
+
+    text-align: right;
+}
+
+#backgroundBar
+{
+    padding: 1px;
+    height: 24px;
+    width: 400px;
+    background-color: #cccccc
+}
+
+#bars
+{
+    margin-top: 10px;
+    float: bottom;
+}
+
+#happinessBar
+{
+    height: 24px;
+    width: 0%;
+    background-color: rgb(255, 0, 0);
+
+    text-align: right;
+}
+
+#healthBar
+{
+    height: 24px;
+    width: 0%;
+    background-color: rgb(51, 173, 51);
+
+    text-align: right;
+}
+
+#smartsBar
+{
+    height: 24px;
+    width: 0%;
+    background-color: rgb(0, 162, 255);
+
+    text-align: right;
+}
+
+#gradesBar
+{
+    height: 24px;
+    width: 0%;
+    background-color: rgb(44, 229, 116);
+
+    text-align: right;
+}
+
+#backgroundHomeworkBar
+{
+    height: 30px;
+    width: 400px;
+    padding: 1px;
+    margin-top: 176px;
+    margin-left: 40px;
+    background-color: #cccccc
+}
+
+#homeworkBar
+{
+    height: 30px;
+    width: 0%;
+    background-color: rgb(255, 0, 0);
+}
+
+
+#momHappinessBar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(247, 0, 255)
+}
+
+#dadHappinessBar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 60, 255)
+}
+
+#roommateHappinessBar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(223, 19, 19)
+}
+
+#divider
+{
+    float: left;
+    height: 10px;
+    width: 500px;
+}
+#classmates_background_bar
+{
+    margin-top: 5px;
+    float: left;
+    height: 24px;
+    width: 400px;
+    background-color: #cccccc;
+}
+
+#classmate1_relationship_bar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 255, 85)
+}
+#classmate2_relationship_bar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 255, 85)
+}
+#classmate3_relationship_bar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 255, 85)
+}
+#classmate4_relationship_bar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 255, 85)
+}
+#classmate5_relationship_bar
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(0, 255, 85)
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------- Classmate Names -------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+#classmate1Name
+{
+    display: block;
+}
+#classmate2Name
+{
+    display: block;
+}
+#classmate3Name
+{
+    display: block;
+}
+#classmate4Name
+{
+    display: block;
+}
+#classmate5Name
+{
+    display: block;
+}
+/*-----------GO TO INDIVIDUAL CLASSMATE BUTTON------*/
+.classmateButton
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(#53ff43, #15ff00, #00AA00);
+    box-shadow: 2px 2px 2px 2px;
+}
+
+/*-----EACH CLASSMATE'S INDIVIDUAL PAGE-------*/
+#classmate1Page
+{
+    display: none;
+}
+#classmate2Page
+{
+    display: none;
+}
+#classmate3Page
+{
+    display: none;
+}
+#classmate4Page
+{
+    display: none;
+}
+#classmate5Page
+{
+    display: none;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*Popup Pages*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*Note: activitiesPage is the entire page itself. mainActivities is a div that holds all the main buttons
+        This pertains to all the pages (eg: classesPage and mainClasses                                 */
+
+#activitiesPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+#mainActivities
+{
+    width: 500px;
+    height: 850px;
+    display: block;
+}
+
+#netFlixMenu
+{
+    width: 490px;
+    height: 750px;
+    display: none;
+}
+
+#classesPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+#mainClasses
+{
+    width: 500px;
+    height: 850px;
+    display: block;
+}
+
+#financesPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+#mainFinances
+{
+    width: 500px;
+    height: 850px;
+    display: block;
+}
+
+#relationshipsPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+#mainRelationships
+{
+    width: 500px;
+    height: 850px;
+    display: block;
+}
+
+
+#parentsPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+#classmatesPage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+#roommatePage{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*---------------CLASSMATES---------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+#backToClassmatesList
+{   
+    margin-top: 20px;
+    width: 500px;
+    height: 75px;
+    background-image: url(drex/relationships/backToClassmatesList.png);
+}
+.classmateConversation
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/ClassmateConversationButton.png);
+}
+
+.classmateStudy
+{
+    float: left;
+    width: 100%;
+    height: 75px;
+    background-image: url(drex/relationships/ClassmateStudyButton.png);
+}
+
+#tutorial{
+    width:500px;
+    height: 850px;
+    margin-left: 100px;
+    border-radius: 30px;
+    border: solid black;
+    float: left;
+    display: none;
+    background-color: #BBBBBB;
+    font-size: x-large;
+}

@@ -1,0 +1,6 @@
+Title 16 (Comic Sans MS)
+Description 12 (No bold) (Italics)
+
+Netflix
+title font size: 16
+title descript: 12 (No Italics)

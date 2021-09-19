@@ -1,0 +1,38 @@
+<!--Name of File: Main Login Page Section
+Purpose: Holds the html code for the login page.
+Last modified: 6/5/20
+Authors: Nick Kirtsos
+Dependencies: None
+-->
+
+<html>
+<head>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="LoginStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+</head>
+  <body>
+    <div class="main" id="main">
+      <p class="sign" align="center">Sign in</p>
+
+        <input class="un" type="text" align="center" id="emailField" placeholder="Username">
+        <input class="pass" type="password" align="center" id="passwordField" placeholder="Password">
+        <button class="button" align="center" onclick="Login()">Sign in</button>
+        <button class="button2" align="center" onclick="showcreate()">Create User</button>
+        <button class="CUbutton" align="center" onclick="Maingame()"> Back to Game </button>
+
+      </div>
+      <div class="main2" id="main2">
+        <p class="sign" align="center">Create Users</p>
+
+          <input class="un" type="text" align="center" id="emailField2" placeholder="Username">
+          <input class="pass" type="password" align="center" id="passwordField2" placeholder="Password">
+          <button class="button2" onclick="createUser()">Create User</button>
+
+        </div>
+
+  </body>
+</html>

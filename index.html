@@ -1,0 +1,420 @@
+<!--Name of File: Main HTML Section
+Purpose: Holds all the html source code.
+Last modified: 6/5/20
+Authors: Nick Kirtsos, Allen Cai, Jin Zhang, Richard Lam
+Dependencies: None
+-->
+<!DOCTYPE html>
+<html>
+<div id="TheEntireGame" onload="refreshbar()">
+<head>
+<style type="text/css">
+@import url("style.css");
+</style>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="activities_script.js"></script>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript" src="finances.js"></script>
+<script type="text/javascript" src="ending.js"></script>
+<script type="text/javascript" src="randomEvents.js"></script>
+<script type="text/javascript" src="relationships.js"></script>
+</head>
+
+<div class="background">
+    <div class="box-3">
+        <div class="title">Profile</div>
+        <img src = "" id="profilepic" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+        <h3>
+        <p id='name'> </p>
+        </h3>
+        <br>
+        <p><label for="majors"><big>Major: </big> </label>
+            <select id="majors">
+            <option disabled selected value> -- Select your major: -- > </option>
+            <option value="cs">Computer Science</option>
+            <option value="se">Software Engineering</option>
+            <option value="cst">Cybersecurity</option>
+            <option value="ds">Data Science</option>
+            </select></p>
+        <br>
+        <p><label for="interests"><big>Hobby: </big> </label>
+            <select id="interests">
+            <option disabled selected value> -- Select your hobby: -- > </option>
+            <option value="partying">Partying</option>
+            <option value="dancing">Dancing</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="jogging">Jogging</option>
+            <option value="rockclimbing">Rock Climbing</option>
+            <option value="soccer">Soccer</option>
+            <option value="graphicdesign">Graphic Design</option>
+            <option value="photography">Photography</option>
+            <option value="cooking">Cooking</option>
+            <option value="singing">Singing</option>
+            <option value="guitar">Playing Guitar</option>
+            <option value="videogames">Playing Video Games</option>
+            <option value="movies">Watching Movies</option>
+            <option value="anime">Watching Anime</option>
+            <option value="sleeping">Sleeping</option>
+            </select></p>
+        <br><br>
+            Happiness:
+            <div id="bars">
+                <div id="backgroundBar">
+                <div id="happinessBar"></div>
+            </div>
+            <br>
+            Health:
+            <div id="backgroundBar">
+                <div id="healthBar"></div>
+                </div>
+            </div>
+            <br>
+            Smarts:
+            <div id="backgroundBar">
+                <div id="smartsBar"></div>
+            </div>
+            <br>
+            Grades:
+            <div id="backgroundBar">
+                <div id="gradesBar"></div>
+            </div>
+            <br>
+            Activities left this week:
+            <div id="backgroundBar">
+                <div id="activityLimitBar"></div>
+            </div>
+            <button onclick=window.location.href="LoginPage.html"> Log-in </button>
+            <button type='button' onClick="dropOut()" id="dropOut"></button>
+        </div>
+
+    <div class="box-1">
+    <div class="title">Drexlyfe</div>
+    <div id='mainMiddlePage'>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script text="text/javascript" src="script.js"></script>
+    </head>
+    <header>
+        <h2 id="weekHeader">Welcome Week!</h2>
+    </header>
+        <br>
+        <div id="textArea">A new day begins as you enter your first day of college at Drexel University. <br>
+        </div>
+        <br>
+        <button type='button' onClick="nextWeek()" id="nextWeek"> Next Week </button>
+        <br>
+        <div class="organizeButtons">
+            <button type='button' onClick="showClasses()" id="classes"></button>
+            <button type='button' onClick="showRelationships()" id="relationships"></button>
+            <button type='button' onClick="showFinances()" id="finances"></button>
+            <button type='button' onClick="showActivities()" id="activities"></button>
+        </div>
+        </div>
+
+
+        <!--Popup Event: Classmate asks for help-->
+        <div id='HelpClassmate'>
+
+            <button type='button' onClick='HelpClassmateStudy()' id='HelpClassmateStudy'>Help classmate study</button>
+            <button type='button' onClick='HelpClassmateCheat()' id='HelpClassmateCheat'>Help classmate cheat</button>
+            <button type='button' onClick='HelpClassmateDecline()' id='HelpClassmateDecline'>Politely decline</button>
+            <button type='button' onClick='HelpClassmateReport()' id='HelpClassmateReport'>Report classmate to Student Conduct</button>
+        </div>
+        <!--Popup Event: Beggar--------------------->
+        <div id="Beggar">
+
+            <button type="button" onClick="giveHomelessAlotMoney()" id="giveHomelessAlotMoney"> Give him twenty dollars </button>
+            <button type="button" onClick="giveHomelessMoney()" id="giveHomelessMoney"> Give him a dollar </button>
+            <button type="button" onClick="dontGiveHomelessMoney()" id="dontGiveHomelessMoney"> Don't give him any money </button>
+            <button type="button" onClick="lieToHomeless()" id="lieToHomeless"> Lie to him and say you have nothing </button>
+        </div>
+
+        <!--Popup Event: SASE Event--------------------->
+        <div id="SaseEvent">
+            <button type="button" onClick="goToSaseEvent()" id="goToSaseEvent"> Go to the Event </button>
+            <button type="button" onClick="ignoreSaseEvent()" id="ignoreSaseEvent"> Don't go to the Event</button>
+        </div>
+        <!--Popup Event: Malaria------------------------>
+        <div id="MalariaEvent">
+            <button type="button" onClick="malaria_visit_urgentcare()" id="malaria_visit_urgentcare"> Visit vybe urgent care </button>
+            <button type="button" onClick="ignore_malaria()" id="ignore_malaria"> Ignore</button>
+        </div>
+        <!--Popup Event: Sprained Ankle----------------->
+        <div id="SprainedAnkleEvent">
+            <button type="button" onClick="sprained_ankle_visit_urgentcare()" id="sprained_ankle_visit_urgentcare"> Visit vybe urgent care </button>
+            <button type="button" onClick="ignore_sprained_ankle()" id="ignore_sprained_ankle"> Ignore </button>
+        </div>
+        <!--Popup Event: Free Popcorn------------------->
+        <div id="FreePopcornEvent">
+            <button type="button" onClick="take_freePopcorn()" id="take_freePopcorn"> Take Free Popcorn </button>
+            <button type="button" onClick="ignore_freePopcorn()" id="ignore_freePopcorn"> Ignore Free Popcorn </button>
+        </div>
+        <!--Finance Event Freelancing------------------->
+        <div id="FreeLanceChoice">
+            <button type="button" onClick="FLC1(1)" id = "Freelancechoicess"> Charge $10</button>
+            <button type="button" onClick="FLC1(2)" id = "Freelancechoices"> Charge $20</button>
+            <button type="button" onClick="FLC1(3)" id = "Freelancechoices"> Charge $40</button>
+            <button type="button" onClick="FLC1(4)" id = "Freelancechoices"> Charge $60</button>
+            <button type="button" onClick="FLC1(5)" id = "Freelancechoices"> Charge $80</button>
+        </div>
+
+        <!--Final Exams-->
+        <div id='easyFinalExam'>
+            <button type="button" onClick="easyWrongAnswer()" id="easyAnswer1" class="blue_button"></button>
+            <button type="button" onClick="easyWrongAnswer()" id="easyAnswer2" class="blue_button"></button>
+            <button type="button" onClick="easyRightAnswer()" id="easyAnswer3" class="blue_button">3</button>
+            <button type="button" onClick="easyWrongAnswer()" id="easyAnswer4" class="blue_button"></button>
+        </div>
+        <div id='hardFinalExam'>
+            <button type="button" onClick="wrongAnswer()" id="answer1" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer2" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer3" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer4" class="blue_button"></button>
+            <button type="button" onClick="rightAnswer()" id="answer5" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer6" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer7" class="blue_button"></button>
+            <button type="button" onClick="wrongAnswer()" id="answer8" class="blue_button"></button>
+        </div>
+    </div>
+
+    <div id="tutorial">
+        <script>$('tutorial').style.display='block';</script>
+        <div class="title">Introduction</div>
+        <br> Welcome to DrexLyfe, a game simulating the Freshman experience at Drexel University!
+        Escape the drudgeries of your own life and live out all your fantasies, all while entertaining yourself
+        with quips about life as a Drexel student. Manage your time and stats wisely though, or else you might
+        just have to drop out (game over)! Get it now? Then try navigating through the menus and doing some of
+        the many activities available to you.
+        <br><br>Drexel's Motto is "Ambition Can't Wait", so now the question is: where will your ambition take you?
+
+        <br><br><br><br><br> If you need a more in depth guide on how to play, please check out our user guide here:
+        <a href="https://docs.google.com/document/d/1qYYlse-ooU3LCvEfc7LXkpAtLB2UqWX4Bi1c2lDLRMg/edit?usp=sharing"><br>User Guide</a>
+
+        <br><br><br> If for whatever reason you are having issues running our game properly, please refer to our systems manual here:
+        <a href="https://docs.google.com/document/d/1pMuszvcrGmbc25_osw7gZ85z6622_hsn2DY60BX3vUI/edit?usp=sharing"><br>Systems Manual</a>
+
+    </div>
+
+    <div id="activitiesPage">
+        <div class="title">Activities</div>
+
+        <!--Main buttons in activity menu-->
+        <div id='mainActivities'>
+        <button type='button' onClick="backToFrontActivities()" id="BacktoFront"></button>
+        <button type='button' onClick="eatAtHans()" id="eatAtHans"></button>
+        <button type='button' onClick="eatFoodTruck()" id="eatFoodTruck"></button>
+        <button type='button' onClick="workoutDAC()" id="workoutDAC"></button>
+        <button type='button' onClick="goToTheLibrary()" id="goToTheLibrary"></button>
+        <button type='button' onClick="playPool()" id="playPool"></button>
+        <button type='button' onClick="getNetflix()" id="getNetflix"></button>
+        <button type='button' onClick="watchNetflix()" id="watchNetflix"></button>
+        <button type='button' onClick="visitUrgentCare()" id="urgentCare"></button>
+        </div>
+
+        <!--Netflix menu-->
+        <div id='netFlixMenu'>
+            <button type='button' onClick='backToMainActivities()' id='NetflixBackButton'></button>
+            <button type='button' onClick='watchAnime()' id='NetflixAnime'></button>
+            <button type='button' onClick='watchSciFi()' id='NetflixSciFi'></button>
+            <button type='button' onClick='watchMarvel()' id='NetflixMarvel'></button>
+            <button type='button' onClick='watchHorror()' id='NetflixHorror'></button>
+            <button type='button' onClick='watchDocumentary()' id='NetflixDocumentary'></button>
+        </div>
+    </div>
+
+    <div id="classesPage">
+        <div id='mainClasses'>
+            <div class="title">Classes</div>
+            <button type='button' onClick="backToFrontClasses()" id="BacktoFront"></button>
+            <ul id=classlist></ul>
+            <button type='button' onClick="study()" id="studyButton"></button>
+
+            <button type='button' onClick="doHomework()" id="homeworkButton"></button>
+            <div id="backgroundHomeworkBar">
+                <div id="homeworkBar"></div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <div id="financesPage">
+        <div id='mainFinances'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <div class="title">Finances</div>
+        <button type='button' onClick="backToFrontFinance()" id="BacktoFront"></button>
+        <h2> Financial Ai Guidance System </h2>
+        <h2 id="money"></h2>
+        <button type="button" onClick="workstudy()" id="workstudy"></button>
+        <button type="button" onClick="work()" id="work"></button>
+        <button type="button" onClick="stealbag()" id="stealbag"></button>
+        <button type="button" onClick="freelance()" id="freelance"></button>
+        </div>
+
+    </div>
+
+    <div id="relationshipsPage">
+        <div id='mainRelationships'>
+        <div class="title">Relationships</div>
+        <button type='button' onClick="backToFrontRelations()" id="BacktoFront"></button>
+        <br><br>
+        <button type="button" onClick="showParents()" id="parentsButton"></button>
+        <button type="button" onClick="showClassmates()" id="classmatesButton"></button>
+        <button type="button" onClick="showRoommate()" id="roommateButton"></button>
+        </div>
+
+    </div>
+
+    <div id="parentsPage">
+        <div class="title">Parents</div>
+        Mom: <p id='momName'> </p> <img src = "" id="mom" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+        Dad: <p id='dadName'> </p> <img src = "" id="dad" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+        <button type="button" onClick="callMom()" id="callMom"></button>
+        <button type="button" onClick="callDad()" id="callDad"></button>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Mom's Happiness
+        <div id="bars">
+            <div id="backgroundBar">
+            <div id="momHappinessBar"></div>
+        </div>
+        <br>
+        <br>
+        Dad's Happiness
+        <div id="bars">
+            <div id="backgroundBar">
+            <div id="dadHappinessBar"></div>
+        </div>
+        <br> </div> </div>
+    </div>
+
+    <div id="classmatesPage">
+        <div id="mainClassmatesPage">
+            <div class="title">Classmates</div>
+            <div style="float: left;">
+                <p id='classmate1Name'> </p> <img src = "" id="classmate1" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+                <p id='classmate2Name'> </p> <img src = "" id="classmate2" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+                <p id='classmate3Name'> </p> <img src = "" id="classmate3" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+                <p id='classmate4Name'> </p> <img src = "" id="classmate4" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+                <p id='classmate5Name'> </p> <img src = "" id="classmate5" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+            </div>
+            <div style="display: inline;">
+                <button type="button" onClick="showClassmate(1)" class='classmateButton' style="margin-top: 50px;"> Classmate 1 </button>
+                <br>
+                <button type="button" onClick="showClassmate(2)" class='classmateButton' style="margin-top: 48px;"> Classmate 2 </button>
+                <br>
+                <button type="button" onClick="showClassmate(3)" class='classmateButton' style="margin-top: 48px;"> Classmate 3 </button>
+                <br>
+                <button type="button" onClick="showClassmate(4)" class='classmateButton' style="margin-top: 48px;"> Classmate 4 </button>
+                <br>
+                <button type="button" onClick="showClassmate(5)" class='classmateButton' style="margin-top: 48px;"> Classmate 5 </button>
+            </div>
+        </div>
+
+        <div id='classmate1Page'>
+            <button type="button" onClick="backToClassmatesList()" id="backToClassmatesList"></button>
+            <button type="button" onClick="classmateConversation(1)" class="classmateConversation"></button>
+            <button type="button" onClick="classmateStudy(1)" class="classmateStudy"></button>
+            <div id="divider"></div>
+            <br>
+            Relationship Strength
+            <div id="classmates_background_bar">
+                <div id="classmate1_relationship_bar"></div>
+            </div>
+        </div>
+        <div id='classmate2Page'>
+            <button type="button" onClick="backToClassmatesList()" id="backToClassmatesList"></button>
+            <button type="button" onClick="classmateConversation(2)" class="classmateConversation"></button>
+            <button type="button" onClick="classmateStudy(2)" class="classmateStudy"></button>
+            <div id="divider"></div>
+            <br>
+            Relationship Strength
+            <div id="classmates_background_bar">
+                <div id="classmate2_relationship_bar"></div>
+            </div>
+        </div>
+        <div id='classmate3Page'>
+            <button type="button" onClick="backToClassmatesList()" id="backToClassmatesList"></button>
+            <button type="button" onClick="classmateConversation(3)" class="classmateConversation"></button>
+            <button type="button" onClick="classmateStudy(3)" class="classmateStudy"></button>
+            <div id="divider"></div>
+            <br>
+            Relationship Strength
+            <div id="classmates_background_bar">
+                <div id="classmate3_relationship_bar"></div>
+            </div>
+        </div>
+        <div id='classmate4Page'>
+            <button type="button" onClick="backToClassmatesList()" id="backToClassmatesList"></button>
+            <button type="button" onClick="classmateConversation(4)" class="classmateConversation"></button>
+            <button type="button" onClick="classmateStudy(4)" class="classmateStudy"></button>
+            <div id="divider"></div>
+            <br>
+            Relationship Strength
+            <div id="classmates_background_bar">
+                <div id="classmate4_relationship_bar"></div>
+            </div>
+        </div>
+        <div id='classmate5Page'>
+            <button type="button" onClick="backToClassmatesList()" id="backToClassmatesList"></button>
+            <button type="button" onClick="classmateConversation(5)" class="classmateConversation"></button>
+            <button type="button" onClick="classmateStudy(5)" class="classmateStudy"></button>
+            <div id="divider"></div>
+            <br>
+            Relationship Strength
+            <div id="classmates_background_bar">
+                <div id="classmate5_relationship_bar"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="roommatePage">
+        <div class="title">Roommate</div>
+        Roommate: <p id='roommateName'> </p> <img src = "" id="roommate" style="width:120px; height:100px; display:block; margin-left:auto; margin-right:auto;">
+        <button type="button" onClick="friendlyConversation(roommateName, roommateHappinessBar)" id="conversationButton"></button>
+        <button type="button" onClick="askMoney(roommateName, roommateHappinessBar)" id="burrowMoneyButton"></button>
+        <button type="button" onClick="cleanRoom()" id="cleanRoomButton"></button>
+        <button type="button" onClick="askForHelp(roommateName)" id="roommateHelpButton"></button>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Roommate Happiness
+        <div id="bars">
+            <div id="backgroundBar">
+            <div id="roommateHappinessBar"></div>
+        </div>
+    </div>
+
+    <br>
+    <div class="bottom">
+        <br/>
+        <section> Made by Team 697 @DREXEL </section>
+    </div>
+
+    </div>
+
+
+</body>
+</div>
+</div>
+</div>
+<!--This is the display that appears when the user drops out-->
+<div id="dropOutDisplay">
+    Game Over
+    <br>
+You've dropped out of Drexel University!
+<hr>
+<p id="EndText"></p>
+</div>
+
+<!--Display when user wins-->
+<div id="winDisplay">
+    You've survived Drexel's first year!
+    <br>
+    Now you can take a step back and relax until your next year. Enjoy your one and only summer break!
+    <hr>
+    <p id="WinText"></p>
+</div>
+
+</html>

@@ -1,0 +1,17 @@
+Overall title: Font size = 28 Bold: True
+
+2nd Title: Font size = 24 Bold: True
+
+Description: Font size = 18 Bold: True
+
+(For now it's Comic Sans MS)
+
+
+Tests:
+Overall Title: Font size = 32 Bold: True
+
+Font Size = 24 Bold: True
+
+Description: Font size = 18, Bold: True
+
+Comic Sans MS
